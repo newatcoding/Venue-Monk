@@ -8,16 +8,15 @@ public class Problem3 {
 			System.out.println("a+b+c= 1000");
 			int sum=1000;
 			for (int i = 1; i <= sum / 3; i++) 
-	        { 
-	              
-	            
+	        {   
 	            for (int j = i + 1; j <= sum / 2; j++) 
 	            { 
 	                int k = sum - i - j; 
 	                if (i * i + j * j == k * k)  
 	                { 
-	                    System.out.print(i + ", "+  
+	                    System.out.println(i + ", "+  
 	                                j + ", " + k); 
+	                    System.out.println("Product is "+(i*j*k));
 	                    return; 
 	                } 
 	            } 
